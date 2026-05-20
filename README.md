@@ -15,36 +15,22 @@ A cinematic, smooth-scrolling portfolio website built with HTML, CSS, and JavaSc
 
 ## Deploy to GitHub Pages
 
-### 1. Create a GitHub repository
+### Repository
 
-1. Go to [github.com/new](https://github.com/new)
-2. Name it e.g. `lakshmi-portfolio`
-3. Set visibility to **Public**
-4. Do **not** initialize with README (you already have files)
+**https://github.com/SHANCHAARI/lakshmimanognya**
 
-### 2. Push this folder
+Code is already pushed to the `main` branch.
 
-```bash
-cd portfolio
-git init
-git add .
-git commit -m "Add portfolio website"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/lakshmi-portfolio.git
-git push -u origin main
-```
+### Enable GitHub Pages (one-time)
 
-### 3. Enable GitHub Pages
+1. Open [github.com/SHANCHAARI/lakshmimanognya/settings/pages](https://github.com/SHANCHAARI/lakshmimanognya/settings/pages)
+2. Under **Build and deployment** → **Source**, choose **Deploy from a branch**
+3. Branch: `main`, folder: `/ (root)`
+4. Click **Save**
 
-1. Open your repo on GitHub
-2. Go to **Settings** → **Pages**
-3. Under **Build and deployment** → **Source**, choose **Deploy from a branch**
-4. Branch: `main`, folder: `/ (root)`
-5. Click **Save**
+Your live site will be at:
 
-Your site will be live at:
-
-`https://YOUR_USERNAME.github.io/lakshmi-portfolio/`
+**https://shanchaari.github.io/lakshmimanognya/**
 
 (Allow 1–3 minutes for the first deploy.)
 
