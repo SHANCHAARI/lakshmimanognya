@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Simhambhatla Lakshmi Manojna — B.Tech student, ML and IoT enthusiast, ATL Mentor." />
+  <meta name="theme-color" content="#0a0a12" />
+  <title>Lakshmi Manojna | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <div class="preloader" id="preloader" aria-live="polite">
+    <div class="preloader-inner">
+      <div class="preloader-orbit"></div>
+      <p class="preloader-label">Loading experience</p>
+      <div class="preloader-bar"><span class="preloader-fill"></span></div>
+      <p class="preloader-percent">0%</p>
+    </div>
+  </div>
+
+  <div class="bg-canvas" aria-hidden="true">
+    <canvas id="particleCanvas"></canvas>
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="aurora aurora-3"></div>
+    <div class="grain"></div>
+  </div>
+
+  <header class="nav-wrap" id="nav">
+    <nav class="nav glass" aria-label="Main">
+      <a href="#hero" class="nav-logo" data-magnetic>
+        <span class="logo-mark">LM</span>
+        <span class="logo-text">Manojna</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#experience" data-nav>Experience</a></li>
+        <li><a href="#education" data-nav>Education</a></li>
+        <li><a href="#skills" data-nav>Skills</a></li>
+        <li><a href="#projects" data-nav>Projects</a></li>
+        <li><a href="#certifications" data-nav>Certs</a></li>
+        <li><a href="#achievements" data-nav>Achieve</a></li>
+        <li><a href="#contact" class="nav-cta" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+    
+      <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+    
+  </header>
+
+  <main id="main">
+    <section class="section hero" id="hero" data-section>
+      <div class="hero-content">
+        <p class="eyebrow reveal" data-reveal>
+          <span class="pulse-dot"></span>
+          B.Tech · ML · IoT · VLSI
+        </p>
+        <h1 class="hero-title">
+          <span class="line reveal" data-reveal><span class="muted">Simhambhatla</span></span>
+          <span class="line reveal gradient-text" data-reveal data-delay="0.1">Lakshmi</span>
+          <span class="line reveal gradient-text-alt" data-reveal data-delay="0.2">Manojna</span>
+        </h1>
+        <p class="hero-tagline reveal" data-reveal data-delay="0.35">
+          Engineering minds. Building intelligent systems.<br />
+          Mentoring the next generation in STEM.
+        </p>
+        <div class="hero-actions reveal" data-reveal data-delay="0.5">
+          <a href="#projects" class="btn btn-primary" data-magnetic>
+            <span>View Projects</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="mailto:lakshmimanognyasimhambhatla03@gmail.com" class="btn btn-ghost" data-magnetic>
+            <span>Get in Touch</span>
+          </a>
+        </div>
+        <div class="hero-stats reveal" data-reveal data-delay="0.65">
+          <div class="stat">
+            <span class="stat-num" data-count="9.52">0</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="7">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual reveal" data-reveal data-delay="0.3">
+        <div class="orbit-card glass">
+          <div class="orbit-ring ring-1"></div>
+          <div class="orbit-ring ring-2"></div>
+          <div class="orbit-ring ring-3"></div>
+          <div class="orbit-center">
+            <span class="orbit-initials">SLM</span>
+            <p class="orbit-role">Innovator</p>
+          </div>
+          <div class="orbit-badge badge-1">Python</div>
+          
+            <div class="orbit-badge badge-2">ML</div>
+            <div class="orbit-badge badge-3">IoT</div>
+            <div class="orbit-badge badge-4">Verilog</div>
+          
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </a>
+    </section>
+
+    <section class="section about" id="about" data-section>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">01</span>
+          <h2 class="section-title reveal" data-reveal>About <span class="accent">Me</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal" data-reveal>
+            <p class="lead">
+              I seek challenging opportunities where I can fully use my skills for the success of the organization.
+            </p>
+            <p>
+              I'm a passionate B.Tech student at Lendi Institute of Engineering and Technology with a strong foundation in programming, data structures, and emerging technologies — from machine learning and IoT to digital VLSI design.
+            </p>
+            <p>
+              Beyond academics, I've mentored government school students at Atal Tinkering Labs, participated in ISRO geo-data programs, IITNIF internships, and Smart India Hackathon 2025.
+            </p>
+          </div>
+          <div class="about-cards reveal" data-reveal data-delay="0.15">
+            <div class="info-card glass">
+              <span class="info-icon">📍</span>
+              <div>
+                <h3>Location</h3>
+                <p>100ft Ring Road, Vizianagaram</p>
+              </div>
+            </div>
+            <div class="info-card glass">
+              <span class="info-icon">📞</span>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+919100593095">+91 91005 93095</a></p>
+              </div>
+            </div>
+            <div class="info-card glass">
+              <span class="info-icon">✉️</span>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:lakshmimanognyasimhambhatla03@gmail.com">lakshmimanognyasimhambhatla03@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="info-card glass highlight">
+              <span class="info-icon">🎯</span>
+              <div>
+                <h3>Focus</h3>
+                <p>ML · IoT · Embedded · VLSI · STEM Education</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience" data-section>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">02</span>
+          <h2 class="section-title reveal" data-reveal>Work <span class="accent">Experience</span></h2>
+        </div>
+        <article class="exp-card glass reveal" data-reveal>
+          <div class="exp-meta">
+            <span class="exp-period">2025 — 2026</span>
+            <span class="exp-badge">Internship</span>
+          </div>
+          <h3 class="exp-role">ATL Mentor Intern</h3>
+          <p class="exp-org">Atal Tinkering Labs</p>
+          <ul class="exp-list">
+            <li>Trained government school students in STEM and basic coding.</li>
+            <li>Guided students in simple projects and hands-on activities.</li>
+            <li>Strengthened communication and leadership through mentorship.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section education" id="education" data-section>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">03</span>
+          <h2 class="section-title reveal" data-reveal>Education <span class="accent">Journey</span></h2>
+        </div>
+        <div class="timeline" id="timeline">
+          <div class="timeline-line" aria-hidden="true"></div>
+          <article class="timeline-item reveal" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-year">2023 — 2027</span>
+              <h3>B.Tech</h3>
+              <p class="timeline-school">Lendi Institute of Engineering and Technology</p>
+              <span class="timeline-score gold">CGPA 9.52</span>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-reveal data-delay="0.1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-year">2021 — 2023</span>
+              <h3>Intermediate</h3>
+              <p class="timeline-school">Apex Junior College</p>
+              <span class="timeline-score">964 marks</span>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-reveal data-delay="0.2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-year">2021</span>
+              <h3>School</h3>
+              <p class="timeline-school">Dr. Besant E.M High School</p>
+              <span class="timeline-score">572 marks</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills" data-section>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">04</span>
+          <h2 class="section-title reveal" data-reveal>Technical <span class="accent">Skills</span></h2>
+        </div>
+        <div class="skills-cloud reveal" data-reveal>
+          <div class="skill-chip" data-skill style="--i:0">Python</div>
+          <div class="skill-chip" data-skill style="--i:1">C</div>
+          <div class="skill-chip" data-skill style="--i:2">Data Structures</div>
+          <div class="skill-chip" data-skill style="--i:3">SQL</div>
+          <div class="skill-chip" data-skill style="--i:4">Verilog</div>
+          <div class="skill-chip soft" data-skill style="--i:5">Communication</div>
+          <div class="skill-chip soft" data-skill style="--i:6">Leadership</div>
+          <div class="skill-chip" data-skill style="--i:7">Machine Learning</div>
+          <div class="skill-chip" data-skill style="--i:8">IoT / ESP32</div>
+        </div>
+        <div class="skills-bars reveal" data-reveal data-delay="0.2">
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>Programming</span><span>92%</span></div>
+            
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+            
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>Data and ML</span><span>85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>Hardware / VLSI</span><span>78%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-head"><span>Leadership</span><span>90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" data-section>
+      <div class="container projects-head">
+        <div class="section-header">
+          <span class="section-num">05</span>
+          <h2 class="section-title reveal" data-reveal>Featured <span class="accent">Projects</span></h2>
+        </div>
+        <p class="projects-hint reveal" data-reveal>Drag or scroll horizontally</p>
+      </div>
+      <div class="projects-track-wrap" id="projectsTrack">
+        <div class="projects-track">
+          <article class="project-card glass">
+            <span class="project-num">01</span>
+            <div class="project-tags"><span>ML</span><span>Python</span><span>NLP</span></div>
+            <h3>AI Resume Analyser</h3>
+            <p>Built an AI-oriented resume analyser using machine learning to evaluate and improve candidate profiles intelligently.</p>
+            <div class="project-glow"></div>
+          </article>
+          <article class="project-card glass">
+            <span class="project-num">02</span>
+            <div class="project-tags"><span>ESP32</span><span>IoT</span><span>Embedded</span></div>
+            <h3>Home Automation</h3>
+            <p>Designed and implemented a smart home automation system using ESP32 with remote device control.</p>
+            <div class="project-glow cyan"></div>
+          </article>
+          <article class="project-card glass">
+            <span class="project-num">03</span>
+            <div class="project-tags"><span>ISRO</span><span>Geo Data</span><span>ML</span></div>
+            <h3>GEO Data Processing</h3>
+            <p>Processed geospatial data using Python and machine learning in an ISRO-aligned program.</p>
+            <div class="project-glow rose"></div>
+          </article>
+          <article class="project-card glass wide">
+            <span class="project-num">04</span>
+            <div class="project-tags"><span>SIH 2025</span><span>IoT</span><span>Railways</span></div>
+            <h3>Smart Railway Track System</h3>
+            <p>Smart India Hackathon 2025 — intelligent railway track monitoring and safety solutions.</p>
+            <div class="project-glow gold"></div>
+          </article>
+          <article class="project-card glass">
+            <span class="project-num">05</span>
+            <div class="project-tags"><span>IITNIF</span><span>Satellite</span><span>ML</span></div>
+            <h3>Satellite Data ML</h3>
+            <p>Satellite data analysis using machine learning during the IITNIF StarPoint internship.</p>
+            <div class="project-glow"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section certifications" id="certifications" data-section>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">06</span>
+          <h2 class="section-title reveal" data-reveal>Certifications <span class="accent">and Courses</span></h2>
+        </div>
+      </div>
+      <div class="marquee-wrap reveal" data-reveal>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-content">
+            <span class="cert-pill gold">HCI — NPTEL Gold</span>
+            <span class="cert-pill">DBMS — NPTEL</span>
+            <span class="cert-pill elite">Digital VLSI Testing — NPTEL Elite</span>
+            <span class="cert-pill silver">IoT — NPTEL Silver</span>
+            <span class="cert-pill">CISCO — Python and C</span>
+            <span class="cert-pill">ATL — UNICEF</span>
+            <span class="cert-pill">EDUSKILLS — Fortinet</span>
+            <span class="cert-pill gold">HCI — NPTEL Gold</span>
+            <span class="cert-pill">DBMS — NPTEL</span>
+            <span class="cert-pill elite">Digital VLSI Testing — NPTEL Elite</span>
+            <span class="cert-pill silver">IoT — NPTEL Silver</span>
+            <span class="cert-pill">CISCO — Python and C</span>
+            <span class="cert-pill">ATL — UNICEF</span>
+            <span class="cert-pill">EDUSKILLS — Fortinet</span>
+          </div>
+        </div>
+      </div>
+      <div class="container cert-grid reveal" data-reveal>
+        <div class="cert-card glass gold">
+          <span class="cert-tier">Gold</span>
+          <h3>Human Computer Interaction</h3>
+          <p>NPTEL Certification</p>
+        </div>
+        <div class="cert-card glass">
+          <span class="cert-tier">Certified</span>
+          <h3>DBMS</h3>
+          <p>NPTEL Certification</p>
+        </div>
+        <div class="cert-card glass elite">
+          <span class="cert-tier">Elite</span>
+          <h3>Digital VLSI Testing</h3>
+          <p>NPTEL Certification</p>
+        </div>
+        
+          <div class="cert-card glass silver">
+            <span class="cert-tier">Silver</span>
+            <h3>Internet of Things</h3>
+            <p>NPTEL Certification</p>
+          </div>
+        
+        
+          <div class="cert-card glass">
+            <span class="cert-tier">CISCO</span>
+            <h3>Python and C</h3>
+            <p>CISCO Certifications</p>
+          </div>
+          <div class="cert-card glass">
+            <span class="cert-tier">UNICEF</span>
+            <h3>ATL Program</h3>
+            <p>ATL — UNICEF Certification</p>
+          </div>
+          <div class="cert-card glass">
+            <span class="cert-tier">Fortinet</span>
+            <h3>EDUSKILLS</h3>
+            <p>Fortinet Certification</p>
+          </div>
+        
+      </div>
+    </section>
+
+    <section class="section achievements" id="achievements" data-section>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num">07</span>
+          <h2 class="section-title reveal" data-reveal>Hackathons <span class="accent">and Programs</span></h2>
+        </div>
+        <div class="achieve-grid">
+          <article class="achieve-card glass reveal" data-reveal>
+            <div class="achieve-icon">🛰️
+            <h3>IITNIF StarPoint Internship</h3>
+            <p>Worked on satellite data processing and analysis using machine learning techniques.</p>
+          </article>
+          <article class="achieve-card glass reveal" data-reveal data-delay="0.15">
+            <div class="achieve-icon">🚂</div>
+            <h3>Smart India Hackathon 2025</h3>
+            <p>Developed solutions for a Smart Railway Track System — blending IoT, safety, and innovation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" data-section>
+      <div class="container">
+        <div class="contact-inner glass reveal" data-reveal>
+          <div class="contact-text">
+            <span class="section-num">08</span>
+            <h2 class="section-title">Let's build something <span class="accent">extraordinary</span></h2>
+            <p>Open to internships, collaborations, and roles where engineering meets impact.</p>
+            <div class="contact-links">
+              <a href="mailto:lakshmimanognyasimhambhatla03@gmail.com" class="contact-link" data-magnetic>
+                lakshmimanognyasimhambhatla03@gmail.com
+              </a>
+              <a href="tel:+919100593095" class="contact-link" data-magnetic>+91 91005 93095</a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm" action="mailto:lakshmimanognyasimhambhatla03@gmail.com" method="GET" enctype="text/plain">
+            <label>
+              <span>Name</span>
+              <input type="text" name="subject" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="body" rows="4" placeholder="Tell me about the opportunity..." required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary btn-full" data-magnetic>
+              <span>Send Message</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>2026 <strong>Simhambhatla Lakshmi Manojna</strong> — Crafted with passion</p>
+    <a href="#hero" class="back-top" aria-label="Back to top" data-magnetic>Top</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
